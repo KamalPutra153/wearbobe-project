@@ -1,0 +1,1331 @@
+/* NAVBAR START */
+/* NAVBAR START */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #d4c4b0;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navLeft,
+.navRight {
+  display: flex;
+  gap: 40px;
+}
+
+.navRight {
+  justify-content: flex-end;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #666;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logoCircle {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 5px;
+}
+
+.logoText {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brandName {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 8px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navLeft,
+  .navRight {
+    gap: 20px;
+  }
+
+  .logoCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logoText {
+    font-size: 18px;
+  }
+
+  .navItem {
+    font-size: 12px;
+  }
+}
+/* NAVBAR END */
+/* NAVBAR END */
+
+/* HERO START */
+/* HERO START */
+.hero {
+  /* height: 100vh; */
+  width: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 0.5rem;
+}
+
+.heroContent {
+  width: 90%;
+  background-color: #2c2c2c;
+  border-radius: 60px;
+  padding: 20px; /* Tambahkan padding untuk spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style untuk membuat gambar responsive */
+.heroContent img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 750px; /* Batasi ukuran maksimal */
+  border-radius: 40px; /* Tambahkan border radius untuk estetika */
+  object-fit: cover;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 0.5rem;
+  }
+
+  .heroContent {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0.5rem;
+  }
+
+  .heroContent {
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+  .heroContent img {
+    border-radius: 30px;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 0.25rem;
+  }
+
+  .heroContent {
+    width: 98%;
+    border-radius: 30px;
+    padding: 8px;
+  }
+
+  .heroContent img {
+    border-radius: 20px;
+  }
+}
+
+/* HERO END */
+/* HERO END */
+
+/* COLABORATION START */
+/* COLABORATION START */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #888;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.collaboration-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collaboration-card {
+  background-color: #d4c4b0;
+  border-radius: 60px;
+  padding: 40px 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artist-section {
+  display: flex;
+  align-items: stretch; /* Ubah dari center ke stretch */
+  position: relative;
+  z-index: 1;
+}
+
+.artist-image-left {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  padding: 20px 10px;
+  border-radius: 60px 0px 60px 60px;
+}
+.artist-image-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  padding: 20px 10px;
+  border-radius: 60px 60px 60px 0px;
+}
+
+.artist-image {
+  border-radius: 40px;
+  object-fit: cover;
+  width: 280px !important;
+  height: 350px !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.artist-image:hover {
+  transform: translateY(-5px);
+}
+
+.artist-info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Pastikan info tersusun vertikal */
+  justify-content: center;
+  align-items: stretch; /* Ubah ke stretch agar child elements mengisi penuh */
+}
+
+.artist-info-top {
+  background-color: #ccc;
+  margin: 0 3rem 3rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 60px 60px 0;
+}
+.artist-info-bottom {
+  background-color: #ccc;
+  margin: 3rem 0 0 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px 0 0 60px;
+}
+
+.artist-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.date {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 400;
+  margin: 0;
+}
+
+.product {
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: 500;
+  margin: 0;
+}
+
+.see-more-container {
+  /* margin-top: 0px; */
+  display: flex;
+  justify-content: center;
+}
+
+.see-more-btn {
+  background: linear-gradient(135deg, #4a4a3a 0%, #3a3a2a 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.see-more-btn:hover {
+  background: linear-gradient(135deg, #5a5a4a 0%, #4a4a3a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.see-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .collaboration-card {
+    padding: 30px 40px;
+    gap: 60px;
+  }
+
+  .artist-section {
+    gap: 40px;
+  }
+
+  .artist-image {
+    width: 240px !important;
+    height: 300px !important;
+  }
+
+  .artist-name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .collaboration-card {
+    border-radius: 40px;
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+  .artist-section {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .artist-image {
+    width: 220px !important;
+    height: 280px !important;
+    border-radius: 30px;
+  }
+
+  .artist-name {
+    font-size: 1.8rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .product {
+    font-size: 1.2rem;
+  }
+
+  .see-more-btn {
+    padding: 16px 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaboration-card {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+
+  .artist-image {
+    width: 200px !important;
+    height: 250px !important;
+  }
+
+  .artist-name {
+    font-size: 1.6rem;
+  }
+
+  .see-more-container {
+    margin-top: 40px;
+  }
+}
+
+/* Best Sellers Section */
+.best-sellers-section {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-sellers-card {
+  background: #d4c4b0;
+  border-radius: 60px;
+  padding: 60px 50px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-sellers-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 60px;
+  pointer-events: none;
+}
+
+.best-sellers-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-align: left;
+  margin-bottom: 50px;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.best-sellers-card .products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.best-sellers-card .product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.best-sellers-card .product-image-container {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 60px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.best-sellers-card .product-image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.best-sellers-card .product-image {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.best-sellers-card .product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-sellers-card .product-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  letter-spacing: -0.01em;
+}
+
+.best-sellers-card .product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-material,
+.product-color,
+.product-lining {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.best-sellers-see-more {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Design untuk Best Sellers */
+@media (max-width: 1024px) {
+  .best-sellers-card {
+    padding: 50px 40px;
+  }
+
+  .products-grid {
+    gap: 30px;
+  }
+
+  .product-image {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .best-sellers-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .best-sellers-section {
+    margin-top: 60px;
+  }
+
+  .best-sellers-card {
+    border-radius: 40px;
+    padding: 40px 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product-image-container {
+    padding: 25px;
+    border-radius: 25px;
+  }
+
+  .product-image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .best-sellers-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .product-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .best-sellers-card {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+
+  .product-image-container {
+    padding: 20px;
+  }
+
+  .product-image {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .best-sellers-title {
+    font-size: 1.8rem;
+  }
+
+  .product-name {
+    font-size: 1.2rem;
+  }
+
+  .product-material,
+  .product-color,
+  .product-lining {
+    font-size: 0.9rem;
+  }
+}
+
+/* Origin Story Section */
+.origin-story-section {
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.origin-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  min-height: 70vh;
+}
+
+.origin-text {
+  flex: 1;
+  color: white;
+  padding-right: 40px;
+}
+
+.origin-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.origin-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.origin-see-more {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.origin-image {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-image {
+  border-radius: 30px;
+  object-fit: cover;
+  width: 350px !important;
+  height: 450px !important;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.founder-image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design untuk Origin Story */
+@media (max-width: 1024px) {
+  .origin-content {
+    gap: 60px;
+  }
+
+  .origin-text {
+    padding-right: 20px;
+  }
+
+  .origin-title {
+    font-size: 2.4rem;
+  }
+
+  .origin-description {
+    font-size: 1rem;
+  }
+
+  .founder-image {
+    width: 300px !important;
+    height: 380px !important;
+  }
+
+  .origin-image-container {
+    padding: 30px;
+    border-radius: 40px;
+  }
+
+  .origin-image-container::before {
+    border-radius: 40px;
+  }
+
+  .founder-image {
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .origin-story-section {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .origin-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .origin-text {
+    padding-right: 0;
+    order: 2;
+  }
+
+  .origin-image {
+    order: 1;
+  }
+
+  .origin-title {
+    font-size: 2rem;
+  }
+
+  .origin-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .origin-see-more {
+    justify-content: center;
+  }
+
+  .founder-image {
+    width: 280px !important;
+    height: 350px !important;
+  }
+
+  .origin-image-container {
+    padding: 25px;
+    border-radius: 35px;
+  }
+
+  .origin-image-container::before {
+    border-radius: 35px;
+  }
+
+  .founder-image {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .origin-story-section {
+    padding: 0 10px;
+  }
+
+  .origin-content {
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  .origin-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .origin-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+  }
+
+  .founder-image {
+    width: 250px !important;
+    height: 320px !important;
+  }
+
+  .origin-image-container {
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .origin-image-container::before {
+    border-radius: 30px;
+  }
+
+  .founder-image {
+    border-radius: 18px;
+  }
+}
+/* COLABORATION END */
+/* COLABORATION END */
+
+/* KOLEKSI TOPI PAGE START */
+/* KOLEKSI TOPI PAGE START */
+
+/* Mid Season Collection Section */
+.mid-season-section {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.mid-season-card {
+  border-radius: 60px;
+  padding: 60px 50px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mid-season-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px; /* Tambahkan margin bottom untuk spacing */
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-image-container {
+  margin-bottom: 10px;
+}
+
+.product-image {
+  border-radius: 10px;
+}
+
+.product-info {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-material,
+.product-color,
+.product-lining {
+  margin: 0;
+}
+
+/* Perbaikan untuk text center */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px; /* Tambahkan margin untuk jarak ke button */
+}
+
+.text-center h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0; /* Reset margin default h1 */
+}
+
+/* Perbaikan untuk see-more container */
+.see-more-container {
+  text-align: center;
+}
+
+/* KOLEKSI TOPI PAGE END */
+/* KOLEKSI TOPI PAGE END */
+
+/* SEJARAH PAGE START */
+/* SEJARAH PAGE START */
+
+.sejarah-section {
+  padding: 40px 20px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sejarah-content {
+  width: 90%;
+  display: flex;
+  grid-template-columns: 4fr repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sejarah-content h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sejarah-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.sejarah-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sejarah-image img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* about faizal */
+.about-faizal-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.about-faizal-content {
+  background-color: #d4c4b0; /* Warna latar utama */
+  display: flex;
+  border-radius: 60px;
+  padding: 60px 50px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-image {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.founder-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+  flex: 2;
+  border-radius: 10px;
+}
+
+.content-text h1 {
+  padding: 30px 0 30px 0;
+  font-size: 2rem;
+  color: #333;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  width: 60%;
+  border-radius: 0 60px 60px 0;
+}
+
+.content-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  padding: 0 0 0 20px;
+}
+
+/* Instagram Start */
+/* Instagram Start */
+.instagram-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.instagram-content {
+  display: flex;
+  gap: 30px; /* Tambahkan gap untuk space di tengah */
+  border-radius: 60px;
+  padding: 60px 50px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-content .left {
+  flex: 1;
+  background-color: #d4c4b0;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column; /* Ubah ke column untuk button positioning */
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  position: relative;
+}
+
+.instagram-content .right {
+  flex: 1;
+  background-color: #d4c4b0;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column; /* Ubah ke column untuk button positioning */
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  position: relative;
+}
+
+.instagram-content img {
+  border-radius: 30px;
+}
+
+/* SEJARAH PAGE END */
+/* SEJARAH PAGE END */
+
+/* FOOTER START */
+/* FOOTER START */
+.footer {
+  background: #d4c4b0;
+  padding: 60px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.follow-section {
+  flex: 1;
+}
+
+.follow-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+  letter-spacing: -0.01em;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f8f8f8;
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.marketplace-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.marketplace-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.marketplace-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.marketplace-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* .marketplace-icon.tokopedia {
+  background: linear-gradient(135deg, #03ac0e 0%, #42c766 100%);
+}
+
+.marketplace-icon.shopee {
+  background: linear-gradient(135deg, #ee4d2d 0%, #ff6b35 100%);
+} */
+
+.marketplace-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  letter-spacing: 0.02em;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(44, 44, 44, 0.2);
+  padding-top: 30px;
+  text-align: left;
+}
+
+.copyright {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 0 25px;
+    margin-top: 60px;
+  }
+
+  .marketplace-section {
+    gap: 30px;
+  }
+
+  .marketplace-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social-icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .follow-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .marketplace-section {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .marketplace-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .follow-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .marketplace-section {
+    gap: 30px;
+  }
+
+  .marketplace-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+  }
+
+  .marketplace-label {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+}
+/* FOOTER END */
+/* FOOTER END */

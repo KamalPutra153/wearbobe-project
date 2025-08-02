@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Dark Brown Corduroy",
+    "material": "Material Corduroy",
+    "color": "Colour Dark Brown",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/hero/2.png"
+  },
+  {
+    "id": 2,
+    "name": "Brown Corduroy",
+    "material": "Material Corduroy",
+    "color": "Colour Brown",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/hero/3.png"
+  },
+  {
+    "id": 3,
+    "name": "Green Hearingbone",
+    "material": "Material Tweed Wool",
+    "color": "Colour Green",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/hero/4.png"
+  }
+]
