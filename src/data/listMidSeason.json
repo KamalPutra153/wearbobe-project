@@ -5,7 +5,7 @@
     "material": "Material Corduroy",
     "color": "Colour Dark Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/1.png"
+    "image": "/assets/img/topi/4.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "material": "Material Corduroy",
     "color": "Colour Dark Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/2.png"
+    "image": "/assets/img/topi/6.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "material": "Material Corduroy",
     "color": "Colour Dark Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/3.png"
+    "image": "/assets/img/topi/5.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "material": "Material Corduroy",
     "color": "Colour Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/4.png"
+    "image": "/assets/img/topi/7.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "material": "Material Corduroy",
     "color": "Colour Dark Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/5.png"
+    "image": "/assets/img/topi/9.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "material": "Material Tweed Wool",
     "color": "Colour Green",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/6.png"
+    "image": "/assets/img/topi/8.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "material": "Material Corduroy",
     "color": "Colour Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/7.png"
+    "image": "/assets/img/topi/12.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "material": "Material Corduroy",
     "color": "Colour Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/1.png"
+    "image": "/assets/img/topi/10.png"
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "material": "Material Corduroy",
     "color": "Colour Brown",
     "lining": "Furing AcrylicCotton/PE",
-    "image": "/assets/img/hero/2.png"
+    "image": "/assets/img/topi/11.png"
   }
 ]

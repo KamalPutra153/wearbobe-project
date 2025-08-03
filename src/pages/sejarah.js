@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sejarah() {
   return (
@@ -15,11 +16,15 @@ export default function Sejarah() {
       <section className="hero">
         <div className="heroContent img-fluid">
           <Image
-            src="/assets/img/hero/3.png"
-            height={750}
-            width={750}
+            src="/assets/img/hero/4.jpeg"
+            height={1000}
+            width={1000}
             alt="Hero Image"
           />
+          <div class="position-absolute text-overlay">
+            <h1 class="text-white text-end fw-bold mb-0">NOT JUST A CAP</h1>
+            <h1 class="text-white text-end fw-bold">ITS YOUR IDENTITY</h1>
+          </div>
         </div>
       </section>
 
@@ -44,10 +49,10 @@ export default function Sejarah() {
           </div>
           <div className="sejarah-image col-2">
             <Image
-              src="/assets/img/hero/5.png"
+              src="/assets/img/hero/hatwithhead.png"
               alt="Topi Wearbobe"
               width={300}
-              height={300}
+              height={400}
             />
           </div>
         </div>
@@ -58,7 +63,7 @@ export default function Sejarah() {
         <div className="about-faizal-content">
           <div className="content-image">
             <Image
-              src="/assets/img/hero/1.png"
+              src="/assets/img/artist/FaizalBudiman.jpeg"
               alt="Faizal Budiman - Founder of Wearbobe"
               width={400}
               height={500}
@@ -66,7 +71,7 @@ export default function Sejarah() {
             />
           </div>
           <div className="content-text">
-            <h1>Tentang Sarah Adadeh</h1>
+            {/* <h1>Tentang Sarah Adadeh</h1>
             <p>
               Sarah Adadeh, yang lebih dikenal dengan panggilan Rahhh, adalah
               salah satu Liaison Office saat event NICYMS IICYMS & WRCSO 2025 di
@@ -79,8 +84,8 @@ export default function Sejarah() {
               peserta pada saat itu. Pada saat menjadi LO tersebut outfit dia
               selalu keren dan kecehh, dia memiliki akun Instagram @sarah.adadeh
               .
-            </p>
-            {/* <h1>Tentang Faizal Budiman</h1>
+            </p> */}
+            <h1>Tentang Faizal Budiman</h1>
             <p>
               Faizal Budiman, yang lebih dikenal dengan panggilan Bob, adalah
               salah satu founder Hallway Space Bandung yang terletak di lantai 2
@@ -90,7 +95,7 @@ export default function Sejarah() {
               adalah brand headwear Beatbobe dan Bakmi Badami yang bukanya
               sesuka hati tapi sempat viral di Tiktok. Dia memiliki akun
               Instagram @beatbobe_.
-            </p> */}
+            </p>
           </div>
         </div>
       </section>
@@ -100,24 +105,28 @@ export default function Sejarah() {
         <div className="instagram-content">
           <div className="left">
             <Image
-              src="/assets/img/hero/2.png"
+              src="/assets/img/artist/wearbobenya.png"
               height={300}
               width={300}
               alt="Instagram Image"
             />
-            <div className="see-more-container">
-              <button className="see-more-btn">See More</button>
+            <div className="see-more-container mt-3">
+              <Link href="https://www.instagram.com/wearbobe/" target="_blank">
+                <button className="see-more-btn">See More</button>
+              </Link>
             </div>
           </div>
           <div className="right">
             <Image
-              src="/assets/img/hero/3.png"
-              height={300}
-              width={300}
+              src="/assets/img/artist/beatbob.png"
+              height={350}
+              width={350}
               alt="Instagram Image"
             />
-            <div className="see-more-container">
-              <button className="see-more-btn">See More</button>
+            <div className="see-more-container mt-3">
+              <Link href="https://www.instagram.com/beatbobe_/" target="_blank">
+                <button className="see-more-btn">See More</button>
+              </Link>
             </div>
           </div>
         </div>

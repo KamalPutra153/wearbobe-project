@@ -1,3 +1,14 @@
+:root {
+  --warna-primary: #d4d4c6;
+  --warna-sekunder: #dcddd5;
+  --warna-tulisan: #5f5f4d;
+  --warna-tulisan2: #ffffff;
+  --warna-button: #493f23;
+  --font-family: "Titillium Web", sans-serif;
+  --font-family2: "Poppins", sans-serif;
+  --font-family3: "Permanent Marker", cursive;
+}
+
 /* NAVBAR START */
 /* NAVBAR START */
 
@@ -13,7 +24,7 @@ body {
 }
 
 .navbar {
-  background-color: #d4c4b0;
+  background-color: var(--warna-primary);
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -115,7 +126,6 @@ body {
 /* HERO START */
 /* HERO START */
 .hero {
-  /* height: 100vh; */
   width: 100%;
   background-position: center;
   display: flex;
@@ -127,22 +137,68 @@ body {
 }
 
 .heroContent {
+  position: relative;
   width: 90%;
-  background-color: #2c2c2c;
   border-radius: 60px;
-  padding: 20px; /* Tambahkan padding untuk spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroshort {
+  width: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 0.5rem;
+}
+
+.heroshort-Content {
+  position: relative;
+  width: 90%;
+  border-radius: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.heroOverlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  padding: 0 1rem;
+}
+
+.text-overlay {
+  top: 40%;
+  right: 5%;
+  position: absolute;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
 /* Style untuk membuat gambar responsive */
 .heroContent img {
   width: 100% !important;
-  height: auto !important;
-  max-width: 750px; /* Batasi ukuran maksimal */
+  height: 870px !important;
   border-radius: 40px; /* Tambahkan border radius untuk estetika */
-  object-fit: cover;
+  /* object-fit: fill; */
+}
+
+.heroshort-Content img {
+  width: 100% !important;
+  height: 620px !important;
+  border-radius: 40px; /* Tambahkan border radius untuk estetika */
+  object-fit: fill;
 }
 
 .heroContent h1 {
@@ -181,6 +237,7 @@ body {
 
   .heroContent img {
     border-radius: 30px;
+    height: auto !important;
   }
 
   .heroContent h1 {
@@ -231,7 +288,7 @@ body {
   align-items: center;
 }
 .collaboration-card {
-  background-color: #d4c4b0;
+  background-color: var(--warna-primary);
   border-radius: 60px;
   padding: 40px 20px;
   width: 90%;
@@ -253,7 +310,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ccc;
+  background-color: var(--warna-sekunder);
   padding: 20px 10px;
   border-radius: 60px 0px 60px 60px;
 }
@@ -263,7 +320,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ccc;
+  background-color: var(--warna-sekunder);
   padding: 20px 10px;
   border-radius: 60px 60px 60px 0px;
 }
@@ -290,7 +347,7 @@ body {
 }
 
 .artist-info-top {
-  background-color: #ccc;
+  background-color: var(--warna-sekunder);
   margin: 0 3rem 3rem 0;
   flex: 1;
   display: flex;
@@ -300,7 +357,7 @@ body {
   border-radius: 0 60px 60px 0;
 }
 .artist-info-bottom {
-  background-color: #ccc;
+  background-color: var(--warna-sekunder);
   margin: 3rem 0 0 3rem;
   flex: 1;
   display: flex;
@@ -338,7 +395,7 @@ body {
 }
 
 .see-more-btn {
-  background: linear-gradient(135deg, #4a4a3a 0%, #3a3a2a 100%);
+  background: var(--warna-button);
   color: white;
   border: none;
   padding: 15px 40px;
@@ -478,7 +535,7 @@ body {
 }
 
 .best-sellers-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #2c2c2c;
   text-align: left;
@@ -491,10 +548,10 @@ body {
 .best-sellers-card .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
   margin-bottom: 50px;
   position: relative;
   z-index: 1;
+  gap: 20px;
 }
 
 .best-sellers-card .product-item {
@@ -507,8 +564,7 @@ body {
 .best-sellers-card .product-image-container {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 60px;
-  padding: 30px;
-  margin-bottom: 25px;
+  padding: 0 0 1rem 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
@@ -539,6 +595,11 @@ body {
 .best-sellers-card .product-details {
   display: flex;
   flex-direction: column;
+  margin: 0 !important;
+}
+
+.best-sellers-card .product-details p {
+  margin: 0 !important;
 }
 
 .product-material,
@@ -563,17 +624,17 @@ body {
     padding: 50px 40px;
   }
 
-  .products-grid {
+  .best-sellers-card .products-grid {
     gap: 30px;
   }
 
-  .product-image {
+  .best-sellers-card .product-image {
     width: 160px !important;
     height: 160px !important;
   }
 
   .best-sellers-title {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 }
 
@@ -587,19 +648,22 @@ body {
     padding: 40px 30px;
   }
 
-  .products-grid {
+  .best-sellers-card .products-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .product-image-container {
+  .best-sellers-card .product-image-container {
     padding: 25px;
     border-radius: 25px;
   }
 
-  .product-image {
-    width: 200px !important;
-    height: 200px !important;
+  .best-sellers-card .product-image {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
   }
 
   .best-sellers-title {
@@ -608,7 +672,7 @@ body {
     margin-bottom: 40px;
   }
 
-  .product-name {
+  .best-sellers-card .product-name {
     font-size: 1.3rem;
   }
 }
@@ -619,20 +683,23 @@ body {
     padding: 30px 20px;
   }
 
-  .product-image-container {
+  .best-sellers-card .product-image-container {
     padding: 20px;
   }
 
-  .product-image {
-    width: 180px !important;
-    height: 180px !important;
+  .best-sellers-card .product-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 20px;
+    object-fit: cover;
   }
 
   .best-sellers-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
-  .product-name {
+  .best-sellers-card .product-name {
     font-size: 1.2rem;
   }
 
@@ -668,7 +735,7 @@ body {
 
 .origin-title {
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: 6 00;
   color: #888;
   margin-bottom: 40px;
   letter-spacing: -0.02em;
@@ -676,12 +743,13 @@ body {
 }
 
 .origin-description {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.5;
   margin-bottom: 50px;
   font-weight: 300;
   letter-spacing: 0.01em;
+  text-align: justify;
+  color: var(--warna-tulisan);
 }
 
 .origin-see-more {
@@ -870,53 +938,87 @@ body {
   margin-bottom: 20px;
 }
 
-.products-grid {
+.mid-season-section .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr); /* Default 1 kolom (mobile) */
   gap: 20px;
   justify-content: center;
-  margin-bottom: 40px; /* Tambahkan margin bottom untuk spacing */
+  margin-bottom: 40px;
 }
 
-.product-item {
+/* Untuk layar >= 600px: tampilkan 2 kolom */
+@media (min-width: 600px) {
+  .mid-season-section .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Untuk layar >= 992px: tampilkan 3 kolom (desktop) */
+@media (min-width: 992px) {
+  .mid-season-section .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mid-season-section .product-item {
   text-align: center;
 }
 
-.product-image-container {
+.mid-season-section .product-image-container {
   margin-bottom: 10px;
 }
 
-.product-image {
+.mid-season-section .product-image {
   border-radius: 10px;
+  width: 100%;
+  height: auto;
 }
 
-.product-info {
+.mid-season-section .product-info {
   font-size: 0.9rem;
   color: #333;
 }
 
-.product-name {
+.mid-season-section .product-name {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.product-material,
-.product-color,
-.product-lining {
+.mid-season-section .product-material,
+.mid-season-section .product-color,
+.mid-season-section .product-lining {
   margin: 0;
 }
 
-/* Perbaikan untuk text center */
 .text-center {
   text-align: center;
-  margin-bottom: 20px; /* Tambahkan margin untuk jarak ke button */
+  margin-bottom: 20px;
 }
 
 .text-center h1 {
   font-size: 1.8rem;
   color: #333;
-  margin: 0; /* Reset margin default h1 */
+  margin: 0;
+}
+
+.see-more-container {
+  text-align: center;
+}
+
+.see-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #555;
 }
 
 /* Perbaikan untuk see-more container */
@@ -948,24 +1050,22 @@ body {
 
 .sejarah-content h1 {
   font-size: 2rem;
-  color: #333;
+  color: var(--warna-tulisan);
   margin-bottom: 20px;
 }
 
 .sejarah-content p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  text-align: justify;
+  color: var(--warna-tulisan);
 }
 
 .sejarah-image {
-  margin-top: 20px;
   text-align: center;
 }
 
 .sejarah-image img {
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* about faizal */
@@ -979,7 +1079,7 @@ body {
 }
 
 .about-faizal-content {
-  background-color: #d4c4b0; /* Warna latar utama */
+  background-color: var(--warna-primary); /* Warna latar utama */
   display: flex;
   border-radius: 60px;
   padding: 60px 50px;
@@ -990,7 +1090,7 @@ body {
 
 .content-image {
   flex: 1;
-  background-color: #f5f5f5;
+  background-color: var(--warna-sekunder);
   padding: 30px 0;
   display: flex;
   justify-content: center;
@@ -1014,17 +1114,17 @@ body {
   padding: 30px 0 30px 0;
   font-size: 2rem;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: var(--warna-sekunder);
   margin-bottom: 20px;
   width: 60%;
   border-radius: 0 60px 60px 0;
 }
 
 .content-text p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  color: var(--warna-tulisan);
   padding: 0 0 0 20px;
+  text-align: justify;
 }
 
 /* Instagram Start */
@@ -1050,7 +1150,7 @@ body {
 
 .instagram-content .left {
   flex: 1;
-  background-color: #d4c4b0;
+  background-color: var(--warna-primary);
   padding: 30px 30px;
   display: flex;
   flex-direction: column; /* Ubah ke column untuk button positioning */
@@ -1062,7 +1162,7 @@ body {
 
 .instagram-content .right {
   flex: 1;
-  background-color: #d4c4b0;
+  background-color: var(--warna-primary);
   padding: 30px 30px;
   display: flex;
   flex-direction: column; /* Ubah ke column untuk button positioning */
@@ -1074,15 +1174,157 @@ body {
 
 .instagram-content img {
   border-radius: 30px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 /* SEJARAH PAGE END */
 /* SEJARAH PAGE END */
 
+/* COLLAB PAGE START */
+/* COLLAB PAGE START */
+.collabSection {
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+  text-align: center;
+  width: 100%;
+}
+
+.collabSection-content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collabSection__title {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.collabSection__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.collabSection__card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 320px;
+  text-align: center;
+}
+
+.collabSection__imageWrapper {
+  position: relative;
+}
+
+.collabSection__image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.collabSection__info {
+  padding: 1rem;
+}
+
+.collabSection__name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.collabSection__details p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+.collabSection__highlight {
+  background-color: #eae9dd;
+  border-radius: 40px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.collabSection__artistRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.collabSection__artistImg img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.collabSection__artistInfo {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.collabSection__artistBlock {
+  margin-bottom: 2rem;
+}
+
+.collabSection__artistBlock h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.collabSection__artistBlock .date,
+.collabSection__artistBlock .product {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.collabSection__cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.collabSection__btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.collabSection__btn:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .collabSection__artistRow {
+    flex-direction: column;
+  }
+
+  .collabSection__artistInfo {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+
+/* COLLAB PAGE END */
+/* COLLAB PAGE END */
+
 /* FOOTER START */
 /* FOOTER START */
 .footer {
-  background: #d4c4b0;
+  background: var(--warna-primary);
   padding: 60px 0 30px;
   position: relative;
   overflow: hidden;
@@ -1288,6 +1530,9 @@ body {
 
   .footer-content {
     gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .follow-title {

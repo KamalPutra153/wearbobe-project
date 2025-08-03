@@ -17,9 +17,9 @@ export default function Home() {
       <section className="hero">
         <div className="heroContent img-fluid">
           <Image
-            src="/assets/img/hero/7.png"
-            height={750}
-            width={750}
+            src="/assets/img/hero/3.jpeg"
+            height={1000}
+            width={1000}
             alt="Hero Image"
           />
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="artist-section">
             <div className="artist-image-left">
               <Image
-                src="/assets/img/hero/1.png"
+                src="/assets/img/artist/1.jpg"
                 alt="Jimi Multhazam Performance"
                 width={280}
                 height={350}
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="artist-image-right">
               <Image
-                src="/assets/img/hero/3.png"
+                src="/assets/img/artist/3.jpg"
                 alt="Rama Dhista Akbar in Studio"
                 width={280}
                 height={350}
@@ -121,13 +121,15 @@ export default function Home() {
               Lt.1, Kb. Pisang, Sumur Bandung, Kota Bandung.
             </p>
             <div className="origin-see-more">
-              <button className="see-more-btn">See More</button>
+              <Link href="/sejarah" legacyBehavior>
+                <button className="see-more-btn">See More</button>
+              </Link>
             </div>
           </div>
           <div className="origin-image">
             <div className="origin-image-container">
               <Image
-                src="/assets/img/hero/1.png"
+                src="/assets/img/artist/FaizalBudiman.jpeg"
                 alt="Faizal Budiman - Founder of Wearbobe"
                 width={400}
                 height={500}

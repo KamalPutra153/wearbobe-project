@@ -5,10 +5,10 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navContainer">
         <div className="navLeft">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="navItem home">HOME</a>
           </Link>
-          <Link href="/koleksitopi">
+          <Link href="/koleksitopi" legacyBehavior>
             <a className="navItem koleksi">KOLEKSI TOPI</a>
           </Link>
         </div>
@@ -23,10 +23,10 @@ export default function Navbar() {
         </div>
 
         <div className="navRight">
-          <Link href="/sejarah">
+          <Link href="/sejarah" legacyBehavior>
             <a className="navItem sejarah">SEJARAH</a>
           </Link>
-          <Link href="/kolaborasi">
+          <Link href="/kolaborasi" legacyBehavior>
             <a className="navItem kolaborasi ">KOLABORASI</a>
           </Link>
         </div>

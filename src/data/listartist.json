@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Jimi Multhazam",
+    "tanggal": "5-18-2023",
+    "barang": "Spencer Newsboy Cap",
+    "image": "/assets/img/artist/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tole Kobra",
+    "tanggal": "6-20-2022",
+    "barang": "Workcap Canvas",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/artist/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Rama Dhista Akbar",
+    "tanggal": "5-18-2023",
+    "barang": "Sailor hat",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/artist/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ricky Malau",
+    "tanggal": "4-20-2021",
+    "barang": "-",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/artist/5.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Kuya Sunda",
+    "tanggal": "5-26-2020",
+    "barang": "Barret Hat Red",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/artist/6.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Desi Kinanti",
+    "tanggal": "2-20-2022",
+    "barang": "Austen Flatcap",
+    "lining": "Furing AcrylicCotton/PE",
+    "image": "/assets/img/artist/8.jpeg"
+  }
+]

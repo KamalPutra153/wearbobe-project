@@ -17,9 +17,9 @@ export default function KoleksiTopi() {
       <section className="hero">
         <div className="heroContent img-fluid">
           <Image
-            src="/assets/img/hero/6.png"
-            height={750}
-            width={750}
+            src="/assets/img/hero/1.jpeg"
+            height={1000}
+            width={1000}
             alt="Hero Image"
           />
         </div>
@@ -37,7 +37,7 @@ export default function KoleksiTopi() {
                     src={product.image}
                     alt={product.name}
                     width={300}
-                    height={300}
+                    height={200}
                     className="product-image"
                   />
                   <div className="product-info">
