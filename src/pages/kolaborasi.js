@@ -15,24 +15,29 @@ export default function Kolaborasi() {
       </Head>
       <Navbar />
       {/* SECTION HERO */}
-      <section className="heroshort">
-        <div className="heroshort-Content img-fluid">
+      <section className="hero">
+        <div className="heroContent img-fluid">
           <Image
             src="/assets/img/hero/2.jpeg"
             height={1000}
             width={1000}
             alt="Hero Image"
           />
+          <div class="position-absolute kolaborasi-heroOverlayText">
+            <h1 class="text-white fw-bold">
+              NOT JUST A CAP, ITS YOUR IDENTITY
+            </h1>
+          </div>
         </div>
       </section>
 
       {/* SECTION COLLABORATION */}
       <section className="collabSection">
-        <h1 className="collabSection__title">
+        <h1 className="title">
           Wearbobe juga bekerja sama dengan musisi dan konten kreator, seperti
           Morfem, Jimi Multazam, Kuya Sunda, Danang Goodluck, dan Itutoma, DLL.
         </h1>
-        <div className="collabSection-content">
+        <div className="collabSection-content mt-5">
           <div className="collabSection__grid">
             {listartist.slice(0, 3).map((artist) => (
               <div key={artist.id} className="collabSection__card">
@@ -59,7 +64,7 @@ export default function Kolaborasi() {
 
         <div className="collabSection__highlight">
           <div className="collabSection__artistRow">
-            <div className="collabSection__artistImg">
+            <div className="collabSection__artistImg__left">
               <Image
                 src="/assets/img/artist/1.jpg"
                 alt="Jimi Multhazam Performance"
@@ -69,19 +74,19 @@ export default function Kolaborasi() {
             </div>
 
             <div className="collabSection__artistInfo">
-              <div className="collabSection__artistBlock">
+              <div className="collabSection__artistBlock__top">
                 <h2>Jimi Multhazam</h2>
                 <p className="date">5-18-2023</p>
                 <p className="artist">Spencer Newsboy Cap</p>
               </div>
-              <div className="collabSection__artistBlock">
+              <div className="collabSection__artistBlock__bottom">
                 <h2>Rama Dhista Akbar</h2>
                 <p className="date">5-18-2023</p>
                 <p className="artist">Sailor Hat</p>
               </div>
             </div>
 
-            <div className="collabSection__artistImg">
+            <div className="collabSection__artistImg__right">
               <Image
                 src="/assets/img/artist/3.jpg"
                 alt="Rama Dhista Akbar in Studio"
@@ -89,12 +94,6 @@ export default function Kolaborasi() {
                 height={350}
               />
             </div>
-          </div>
-
-          <div className="collabSection__cta">
-            <Link href="/kolaborasi">
-              <button className="collabSection__btn">See More</button>
-            </Link>
           </div>
         </div>
         <div className="collabSection-content">
@@ -120,6 +119,12 @@ export default function Kolaborasi() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="text-center">
+          <h1>Follow us on</h1>
+        </div>
+        <div className="see-more-container">
+          <button className="see-more-btn">Instagram</button>
         </div>
       </section>
 

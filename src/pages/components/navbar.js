@@ -1,34 +1,67 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navContainer">
         <div className="navLeft">
-          <Link href="/" legacyBehavior>
-            <a className="navItem home">HOME</a>
-          </Link>
-          <Link href="/koleksitopi" legacyBehavior>
-            <a className="navItem koleksi">KOLEKSI TOPI</a>
-          </Link>
+          <div className="">
+            <Image
+              src={"/assets/img/icon/home.png"}
+              width={18}
+              height={18}
+              alt="Home Icon"
+            />
+            <Link href="/" legacyBehavior>
+              <a className="navItem home ms-1">HOME</a>
+            </Link>
+          </div>
+          <div className="navItem">
+            <Image
+              src={"/assets/img/icon/koleksi topi.png"}
+              width={20}
+              height={20}
+              alt="Hat Icon"
+            />
+            <Link href="/koleksitopi" legacyBehavior>
+              <a className="navItem koleksi ms-1">KOLEKSI TOPI</a>
+            </Link>
+          </div>
         </div>
 
         <div className="logo">
-          <div className="logoCircle">
-            <span className="logoText">WC</span>
-          </div>
-          <div className="brandName">WEARBOBE & CO</div>
-          <div className="tagline">EST 2015</div>
-          <div className="tagline">EXPRESSING YOURSELF</div>
+          <Image
+            src="/assets/img/icon/logo.png"
+            width={75}
+            height={75}
+            alt="Wearbobe Logo"
+          />
         </div>
 
         <div className="navRight">
-          <Link href="/sejarah" legacyBehavior>
-            <a className="navItem sejarah">SEJARAH</a>
-          </Link>
-          <Link href="/kolaborasi" legacyBehavior>
-            <a className="navItem kolaborasi ">KOLABORASI</a>
-          </Link>
+          <div>
+            <Image
+              src={"/assets/img/icon/sejarah.png"}
+              width={18}
+              height={18}
+              alt="History Icon"
+            />
+            <Link href="/sejarah" legacyBehavior>
+              <a className="navItem sejarah ms-1">SEJARAH</a>
+            </Link>
+          </div>
+          <div>
+            <Image
+              src={"/assets/img/icon/kolaborasi.png"}
+              width={18}
+              height={18}
+              alt="Collaboration Icon"
+            />
+            <Link href="/kolaborasi" legacyBehavior>
+              <a className="navItem kolaborasi ms-1">KOLABORASI</a>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

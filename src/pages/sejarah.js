@@ -49,7 +49,7 @@ export default function Sejarah() {
           </div>
           <div className="sejarah-image col-2">
             <Image
-              src="/assets/img/hero/hatwithhead.png"
+              src="/assets/img/hero/Layer_1.png"
               alt="Topi Wearbobe"
               width={300}
               height={400}
