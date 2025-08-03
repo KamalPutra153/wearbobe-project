@@ -85,13 +85,13 @@ export default function KoleksiTopi() {
             <h1>Full Catalog From</h1>
           </div>
           <div className="see-more-container">
-            <Link
+            <a
               href="https://www.tokopedia.com/wearbobe"
               target="_blank"
               legacyBehavior
             >
               <button className="see-more-btn">Tokopedia</button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
