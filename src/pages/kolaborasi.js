@@ -2,7 +2,6 @@ import Head from "next/head";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Image from "next/image";
-import bestSellers from "../data/bestSellers.json";
 import listartist from "../data/listartist.json";
 import Link from "next/link";
 
@@ -124,7 +123,13 @@ export default function Kolaborasi() {
           <h1>Follow us on</h1>
         </div>
         <div className="see-more-container">
-          <button className="see-more-btn">Instagram</button>
+          <Link
+            href="https://www.instagram.com/wearbobe/"
+            target="_blank"
+            legacyBehavior
+          >
+            <button className="see-more-btn">Instagram</button>
+          </Link>
         </div>
       </section>
 

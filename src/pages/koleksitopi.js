@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Image from "next/image";
 import bestSellers from "../data/bestSellers.json";
 import listMidSeason from "../data/listMidSeason.json";
+import Link from "next/link";
 
 export default function KoleksiTopi() {
   return (
@@ -84,7 +85,13 @@ export default function KoleksiTopi() {
             <h1>Full Catalog From</h1>
           </div>
           <div className="see-more-container">
-            <button className="see-more-btn">Tokopedia</button>
+            <Link
+              href="https://www.tokopedia.com/wearbobe"
+              target="_blank"
+              legacyBehavior
+            >
+              <button className="see-more-btn">Tokopedia</button>
+            </Link>
           </div>
         </div>
       </section>
