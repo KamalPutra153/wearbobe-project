@@ -1,5 +1,6 @@
 // components/Footer.js
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,51 +10,84 @@ export default function Footer() {
           <div className="follow-section">
             <h3 className="follow-title">Follow us</h3>
             <div className="social-icons">
-              <a href="#" className="social-icon" aria-label="Instagram">
-                <i class="fa-brands fa-instagram fa-2x"></i>
-              </a>
+              <Link href="https://www.instagram.com/wearbobe/" legacyBehavior>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+              </Link>
 
-              <a href="#" className="social-icon" aria-label="Facebook">
-                <i class="fa-brands fa-facebook fa-2x"></i>
-              </a>
+              <Link
+                href="https://web.facebook.com/wearbobe/?_rdc=1&_rdr#"
+                legacyBehavior
+              >
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+              </Link>
 
-              <a href="#" className="social-icon" aria-label="Twitter">
-                <i class="fa-brands fa-twitter fa-2x"></i>
-              </a>
+              <Link href="https://x.com/wearbobe" legacyBehavior>
+                <a target="_blank" className="social-icon" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+              </Link>
 
-              <a href="#" className="social-icon" aria-label="YouTube">
-                <i class="fa-brands fa-youtube fa-2x"></i>
-              </a>
+              <Link
+                href="https://youtu.be/CNZlsHFziSk?si=buZnSTKTlmbINUZ4"
+                legacyBehavior
+              >
+                <a target="_blank" className="social-icon" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+              </Link>
 
-              <a href="#" className="social-icon" aria-label="Google">
-                <i class="fa-brands fa-google fa-2x"></i>
-              </a>
+              <Link
+                href="https://www.google.com/search?q=wearbobe&sca_esv=34fbce1b6673e2ad&sxsrf=AE3TifOyQsWgqBU02oaNz_1x5dtfC3zwnw%3A1754234395142&source=hp&ei=G36PaIOHBpCN4-EPjKqp2AI&iflsig=AOw8s4IAAAAAaI-MK3K3msa40iwFFFrdSG-FbkAIYXia"
+                legacyBehavior
+              >
+                <a target="_blank" className="social-icon" aria-label="Google">
+                  <i class="fa-brands fa-google fa-2x"></i>
+                </a>
+              </Link>
             </div>
           </div>
 
           <div className="marketplace-section">
             <div className="marketplace-item">
               <div className="marketplace-icon tokopedia">
-                <Image
-                  src="/assets/img/icon/Tokopedia.png"
-                  height={75}
-                  width={75} // kamu juga bisa ubah dari 10 ke ukuran yang sesuai
-                  alt="Shopee Logo"
-                />
+                <Link href="https://www.tokopedia.com/wearbobe" legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src="/assets/img/icon/Tokopedia.png"
+                      height={75}
+                      width={75}
+                      alt="Tokopedia Logo"
+                    />
+                  </a>
+                </Link>
               </div>
-              {/* <span className="marketplace-label">Tokopedia</span> */}
             </div>
 
             <div className="marketplace-item">
               <div className="marketplace-icon shopee">
-                <Image
-                  src="/assets/img/icon/shopee-logo.png"
-                  height={75}
-                  width={75} // kamu juga bisa ubah dari 10 ke ukuran yang sesuai
-                  alt="Shopee Logo"
-                />
+                <Link href="https://shopee.co.id/wearbobe" legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src="/assets/img/icon/shopee-logo.png"
+                      height={75}
+                      width={75}
+                      alt="Shopee Logo"
+                    />
+                  </a>
+                </Link>
               </div>
-              {/* <span className="marketplace-label">Shopee</span> */}
             </div>
           </div>
         </div>
